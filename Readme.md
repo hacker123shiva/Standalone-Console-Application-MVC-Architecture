@@ -74,30 +74,21 @@
 
    <h3>1. Connection Setup</h3>
     <p>The DAO establishes a database connection using HikariCP, a lightweight and efficient connection pooling library. The connection configuration includes:</p>
-     <ul>
-        <li><strong>JDBC URL:</strong> The JDBC URL specifies the database location. In this example, it points to a MySQL database named "gla."</li>    
-    
-        <li><strong>Username:</strong> The username used for database authentication (e.g., "root").</li>
+    <li><strong>Username:</strong> The username used for database authentication (e.g., "root").</li>
         <li><strong>Password:</strong> The password used for database authentication (e.g., "root").</li>
-    </ul>
-
+    </ul>    
+       <li><strong>Username:</strong> The username used for database authentication (e.g., "root").</li>
+        <li><strong>Password:</strong> The password used for database authentication (e.g., "root").</li>
+    </ul>   
     <h3>2. Save Student</h3>
-    <p>The <code>save</code> method allows for the insertion of a new student record into the database. It precompiles an SQL insert query and sets the student's details (name, city, email, country) as parameters.</p>
-
-    <h3>3. Find Student by ID</h3>
+    <p>The <code>save</code> method allows for the insertion of a new student record into the database. It precompiles an SQL insert query and sets the student's details (name, city, email, country) as parameters.</p>  
+<h3>3. Find Student by ID</h3>
     <p>The <code>findById</code> method retrieves a student record from the database based on the provided student ID. It prepares a SQL select query and fetches the student's details into a Student DTO (Data Transfer Object).</p>
-
-    <h3>4. Update Student</h3>
-    <p>The <code>updateByStudent</code> method allows for the modification of an existing student record. It prepares an SQL update query and sets the new details (name, city, email, country) based on the provided student object and ID.</p>
-
-    <h3>5. Delete Student by ID</h3>
+ <h3>4. Update Student</h3>
+    <p>The <code>updateByStudent</code> method allows for the modification of an existing student record. It prepares an SQL update query and sets the new details (name, city, email, country) based on the provided student object and ID.</p>    
+<h3>5. Delete Student by ID</h3>
     <p>The <code>deleteById</code> method removes a student record from the database using the student's ID. It first checks if the student exists and then performs a delete operation.</p>
-
-    <h3>6. Exception Handling</h3>
+<h3>6. Exception Handling</h3>
     <p>The DAO handles exceptions such as SQLException and IOException to ensure proper error management during database operations.</p>
-
-    <h3>7. Usage</h3>
+   <h3>7. Usage</h3>
     <p>The Student DAO can be used in conjunction with other layers of your application, such as controllers and services, to interact with the database and manage student data efficiently.</p>
-
-    <h3>8. Note</h3>
-    <p>Ensure that you have the required JDBC driver, such as "mysql-connector-j," and connection pool library, such as "HikariCP," in your project's dependencies.</p>
