@@ -74,14 +74,13 @@
 
    <h3>1. Connection Setup</h3>
     <p>The DAO establishes a database connection using HikariCP, a lightweight and efficient connection pooling library. The connection configuration includes:</p>
-    <li><strong>Username:</strong> The username used for database authentication (e.g., "root").</li>
-        <li><strong>Password:</strong> The password used for database authentication (e.g., "root").</li>
-    </ul>    
+   <ul>    
        <li><strong>Username:</strong> The username used for database authentication (e.g., "root").</li>
         <li><strong>Password:</strong> The password used for database authentication (e.g., "root").</li>
-    </ul>   
-    <h3>2. Save Student</h3>
-    <p>The <code>save</code> method allows for the insertion of a new student record into the database. It precompiles an SQL insert query and sets the student's details (name, city, email, country) as parameters.</p>  
+    </ul> 
+  <h3>2. Save Student</h3>
+    <p>The <code>save</code> method allows for the insertion of a new student record into the database. It precompiles an SQL insert query and sets the student's details (name, city, email, country) as parameters.</p>       
+    
 <h3>3. Find Student by ID</h3>
     <p>The <code>findById</code> method retrieves a student record from the database based on the provided student ID. It prepares a SQL select query and fetches the student's details into a Student DTO (Data Transfer Object).</p>
  <h3>4. Update Student</h3>
